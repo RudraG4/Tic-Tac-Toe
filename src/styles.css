@@ -1,0 +1,128 @@
+* {
+  color: #293462;
+  font-family: "Comfortaa", "Flamenco", "Montserrat Alternates", "sans-serif";
+}
+
+.title {
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+  padding: 1rem;
+  font-family: "Comfortaa", "sans-serif";
+}
+
+.square {
+  position: relative;
+  background: #fff;
+  border: 1px solid;
+  border-radius: 0;
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  box-shadow: none;
+  font-family: "Flamenco", "Montserrat Alternates";
+}
+
+.square:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.square.active,
+.square.show,
+.square:hover {
+  color: var(--bs-btn-active-color);
+  background-color: var(--bs-btn-active-bg);
+  border-color: #999;
+  box-shadow: none;
+}
+
+.btn {
+  --bs-btn-color: #293462;
+  --bs-btn-border-color: #293462;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #293462;
+  --bs-btn-hover-border-color: #293462;
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #293462;
+  --bs-btn-active-border-color: #293462;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #293462;
+  --bs-btn-disabled-bg: transparent;
+  --bs-gradient: none;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #293462;
+  --bs-btn-border-color: #293462;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #d61c4e;
+  --bs-btn-hover-border-color: #d61c4e;
+}
+
+.btn:disabled {
+  --bs-btn-border-color: #293462;
+  --bs-btn-disabled-border-color: #293462;
+  opacity: 1;
+}
+
+.btn[data-set="O"] {
+  --bs-btn-disabled-color: #d61c4e;
+}
+
+.btn[data-set="X"] {
+  --bs-btn-disabled-color: #293462;
+}
+
+.coordinates {
+  font-size: 8px;
+  line-height: 10px;
+  padding-right: 1px;
+  padding-bottom: 1px;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-info {
+  padding: 1rem;
+}
+
+.board-row {
+  flex: 1 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.status {
+  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+  font-family: "Comfortaa", "sans-serif";
+}
+
+.btn.stroke {
+  background-color: #fedb39 !important;
+}
+
+.list-group-item.active {
+  --bs-list-group-active-bg: #293462;
+  --bs-list-group-active-border-color: #293462;
+}
