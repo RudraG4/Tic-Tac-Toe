@@ -1,2 +1,2 @@
 # Tic-Tac-Toe
-Created with CodeSandbox
+A simple Tic-Tac-Toe game created using React, Bootsrap
